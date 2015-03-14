@@ -66,13 +66,15 @@ a,b = b,a
 #### Deðiþken Türleri
 ##### Yerel Deðiþkenler
 Yerel Deðiþkenler sadece tanýmlandýklarý blok içerisinde kullanýlabilirler. Mesela bir döngü içinde tanýmlanan bir yerel deðiþken döngü dýþýnda eriþilemez.
-** Yerel Deðiþkenler Küçük Harf ya da Alt Tire (_) Karakteriyle Baþlamak Zorundadýr.**
+**Yerel Deðiþkenler Küçük Harf ya da Alt Tire (_) Karakteriyle Baþlamak Zorundadýr.**
+
 ```
 sayac = 0
 _sayac = 4
 ornek_degisken = "Örnek"
 ```
-** Yerel Deðiþkenleri Tanýmladýðýmýz Anda Ýlk Deðerini Vermek Zorundayýz Aksi Taktirde Yorumlayýcý Bu Tanýmlamalara Bir Deðiþken Tanýmlamasý Yerine Metod Çaðrýsý Olarak Algýlar ve undefined method (tanýmlanmamýþ metod) hatasý verir.
+
+**Yerel Deðiþkenleri Tanýmladýðýmýz Anda Ýlk Deðerini Vermek Zorundayýz Aksi Taktirde Yorumlayýcý Bu Tanýmlamalara Bir Deðiþken Tanýmlamasý Yerine Metod Çaðrýsý Olarak Algýlar ve undefined method (tanýmlanmamýþ metod) hatasý verir.
 
 		
 ##### Global Deðiþkenler
@@ -83,41 +85,49 @@ Global deðiþkenin tanýmlandýðý anda ilk deðerinin verilmemesi durumunda yorumlay
 
 ##### Sýnýf Deðiþkeni
 Sýnýf deðiþkeninin isminin baþýnda iki adet ` @ ` karakteri bulunur ve bu sýnýfýn tüm örnek nesneleri tarafýndan kullanýlabilirdir.
-** Yerel deðiþkenler gibi oluþturulduklarý anda ilk deðeri verilmelidir. **
+**Yerel deðiþkenler gibi oluþturulduklarý anda ilk deðeri verilmelidir.**
+
 ```
 @@toplam  = 0
 ```
 
 ##### Örnek Deðiþkenleri
 Sýnýf deðiþkenlerine benzer ancak bu deðiþkenler o sýnýftan türemiþ olan geçerli örnek tarafýndan eriþibilirdirler. Ýsimlerinin baþýnda ` @ ` karakteri bulunur.
-** Yorumlayýcý ilk deðer verilmesi konusunda Global deðiþkenlere davrandýðý gibi davranýr yani nill olarak algýlanýr **
+**Yorumlayýcý ilk deðer verilmesi konusunda Global deðiþkenlere davrandýðý gibi davranýr yani nill olarak algýlanýr**
+
 ```
 @isim  = "Furkan"		
 ```
+
 ##### Sabitler
 Program boyunca deðerinin deðiþmeyeceðini düþündüðümüz deðiþkenleri sabit olarak adlandýrabiliriz. Sabit isimleri büyük harfle baþlamak zorundadýrlar. Genellikle tümü büyük harfle yazýlýr.
+
 ```
 KDV_ORANI = 0.18
 KARBOM_ATOM_NO = 6
 ```
+
 ##### Semboller
 Diðer dillerde olmayan semboller Ruby'e özeldir.
 Semboller metinlere çok benzerler. Aralarýndaki en büyük fark;
 Metinler her oluþturulduðunda içeriði aynýda olsa bellekte yeni bir String nesnesi oluþturulur ama semboller bellekte sadece bir kez oluþturulurlar ve tüm oturum boyunca burada sabittirler.
 Ruby de her nesnenin bir kimliði vardýr bu kimlik bilgisine ` object_id ` metodu ile eriþiriz.
+
 ```
 puts "Metin".object_id	#23432596
 puts "Metin".object_id	#23223846
 ```
 Görüldüðü gibi ayný karakterleri içerdikleri halde her metin için yeni bir nesne oluþturulur. Þimdi ayný örneði semboller için yapalým.
-** Semboller : (iki nokta üst üste) karakteriyle baþlarlar. (bazý durumlar hariç).
+**Semboller : (iki nokta üst üste) karakteriyle baþlarlar. (bazý durumlar hariç).**
 
 ```
 puts :metin.object_id		#548932
 puts :metin.object_id		#548932
 ```
+
 Þeklinde sonuç almýþ olduk.
 	
+
 ##### Kýsaca Deðiþkenler
 
 | **Ýlk Karakterler**	| **Deðiþken Türü** |
