@@ -59,23 +59,24 @@ b = gecici
 
 ```
 a,b = b,a
-
 ```
+
 Þeklinde Yapabiliriz.
 
 #### Deðiþken Türleri
-
-	##### Yerel Deðiþkenler
+##### Yerel Deðiþkenler
 		Yerel Deðiþkenler sadece tanýmlandýklarý blok içerisinde kullanýlabilirler. Mesela bir döngü içinde tanýmlanan bir yerel deðiþken döngü dýþýnda eriþilemez.
 		** Yerel Deðiþkenler Küçük Harf ya da Alt Tire (_) Karakteriyle Baþlamak Zorundadýr.**
+
 		```
 		sayac = 0
 		_sayac = 4
 		ornek_degisken = "Örnek"
 		```
-		** Yerel Deðiþkenleri Tanýmladýðýmýz Anda Ýlk Deðerini Vermek Zorundayýz Aksi Taktirde Yorumlayýcý Bu Tanýmlamalara Bir Deðiþken Tanýmlamasý Yerine Metod Çaðrýsý Olarak Algýlar ve undefined method (tanýmlanmamýþ metod) hatasý verir.
 
-	##### Global Deðiþkenler
+		** Yerel Deðiþkenleri Tanýmladýðýmýz Anda Ýlk Deðerini Vermek Zorundayýz Aksi Taktirde Yorumlayýcý Bu Tanýmlamalara Bir Deðiþken Tanýmlamasý Yerine Metod Çaðrýsý Olarak Algýlar ve undefined method (tanýmlanmamýþ metod) hatasý verir.
+		
+##### Global Deðiþkenler
 		Global deðiþkenler yerel deðiþkenlerin aksine nerede tanýmlandýklarýna bakýlmaksýzýn tüm program boyunca kullanýlabilirler.
 		Global deðiþkenler tanýmlanýrken isminin baþýnda ` $ ` (dolar) iþareti bulunmalýdýr.
 		Global deðiþkenin tanýmlandýðý anda ilk deðerinin verilmemesi durumunda yorumlayýcý bunu **nill** (boþ) olarak deðerlendirir. Dolayýsýyla ilk deðer vermek zorunlu deðildir.
