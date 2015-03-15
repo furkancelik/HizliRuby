@@ -1,4 +1,4 @@
-# 02.Temel Girdi ve Çýktý Ýþlemleri
+# 03.Temel Girdi ve Çýktý Ýþlemleri
 
 ## Çýktý Ýþlemleri Puts ve Print
 puts metodu kendisinden sonra gelen metinleri yazar ve hemen arkasýndan \n (yeni satýr karakteri) ekler yani alt satýra geçer.
